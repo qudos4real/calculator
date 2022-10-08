@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-function Main() {
+function main() {
     return (
         <>
             <div class="major-container">
@@ -40,4 +40,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default main
