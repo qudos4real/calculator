@@ -1,11 +1,12 @@
 import React from 'react'
-import './Buttons.css'
+
 
 const numbers = [[1, 2, 3, "+"], [4,5,6,"-"]]
 
 function Buttons() {
     return (
-        <div className='buttonWrapper'>
+        <div>
+          
           {numbers.flat().map((num) => {
                 return (
                     <button key={num} className="num" value={num} onClick={() => {
@@ -15,14 +16,14 @@ function Buttons() {
                 )
             })}
 
-            {/* {numbers.map((num) => {
+            {numbers.map((num) => {
                 return (
                     <button key={num} className="num" value={num} onClick={() => {
                         console.log(`${num} clicked`)
                     }
                     } >{num}</button>
                 )
-            })} */}
+            })}
         </div>
     )
 }
