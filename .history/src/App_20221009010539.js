@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import Buttons from "./components/Buttons";
 import Screen from "./components/Screen";
+import { useState } from "react";
 
-
-const numbers = [
-  [1, 2, 3, "+"],
-  [4, 5, 6, "-"],
-  [7, 8, 9, "*"],
-  ["C", 0, "=", "/"],
-];
 
 function App() {
   let [calc, setCalc] = useState({
@@ -19,14 +13,7 @@ function App() {
   return (
     <div>
       <Screen value={calc.num ? calc.num : calc.res} />
-      {numbers.map((num) => {
-        return (
-          <button>
-            {num}
-          </button>
-        )
-      })}
-      })
+      <Buttons />
     </div>
   );
 }
