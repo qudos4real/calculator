@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Buttons from "./components/Buttons";
-import Screen from "./components/Screen";
+import Screen from "./components/screen";
 
 
 function App() {
