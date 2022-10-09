@@ -15,22 +15,20 @@ function Buttons() {
   const clearVal = () => {
     try {
       setVal(val.slice(0, -1));
-    } catch (error) {
-      setVal("");
-    }
+    } catch (error) {}
   };
-
+  
   const equalTo = () => {
-    try {
-      setVal(eval(val));
-    } catch (error) {
-      setVal("Error");
-    }
-  };
+try {
+  setVal(eval(val));
+} catch (error) {
+  
+}
+  }
 
   return (
     <div className="buttonWrapper">
-      <input type="text" className="screen" value={val} onChange={(e) => setVal(e.target.value)} /> <br />
+      <input type="text" className="screen" value={val} /> <br />
       {numbers.flat().map((num) => (
         <button
           className="num"
@@ -39,9 +37,8 @@ function Buttons() {
           onClick={
             num === "C"
               ? (e) => clearVal()
-              : num === "="
-              ? () => equalTo()
-              : (e) => setVal(val + e.target.value)
+              :  num === "=" ? () => equalTo() :
+              (e) => setVal(val + e.target.value)
           }
         >
           {num}

@@ -30,7 +30,7 @@ function Buttons() {
 
   return (
     <div className="buttonWrapper">
-      <input type="text" className="screen" value={val} onChange={(e) => setVal(e.target.value)} /> <br />
+      <input type="text" className="screen" value={val} onChange={(e) => setVal(e.target.value())} /> <br />
       {numbers.flat().map((num) => (
         <button
           className="num"
