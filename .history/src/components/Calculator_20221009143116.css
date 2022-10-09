@@ -10,17 +10,16 @@
     border-radius: 0.5rem;
 }
 .num {
-    width: 22%;
+    width: 25%;
     font-size: large;
     padding: 1.5rem 0.5rem;
-    margin: 0.25rem;
+    margin: 0.5rem;
     border: none;
     box-shadow: 2px 2px 3px grey;
     border-radius: 0.5rem;
     background-color: white;
     transition-duration: 0.3s;
     color: blue;
-    font-weight: 600;
 }
 .num:hover {
     background-color: blue;

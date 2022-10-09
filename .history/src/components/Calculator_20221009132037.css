@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+.buttonWrapper {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(241, 237, 237);
+}
+.num {
+    width: 25%;
+}
+.screen {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0.25rem;
+    text-align: end;
+
+    border: none;
+    border-radius: 0.5rem;
+}
+

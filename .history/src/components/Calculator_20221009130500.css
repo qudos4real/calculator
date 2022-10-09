@@ -1,0 +1,9 @@
+.buttonWrapper {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
+}
+.num {
+    width: 25%;
+}

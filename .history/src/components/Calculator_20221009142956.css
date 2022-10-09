@@ -12,7 +12,7 @@
 .num {
     width: 22%;
     font-size: large;
-    padding: 1.5rem 0.5rem;
+    padding: 0.5rem 1rem;
     margin: 0.25rem;
     border: none;
     box-shadow: 2px 2px 3px grey;
@@ -20,7 +20,6 @@
     background-color: white;
     transition-duration: 0.3s;
     color: blue;
-    font-weight: 600;
 }
 .num:hover {
     background-color: blue;
