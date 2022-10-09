@@ -1,0 +1,9 @@
+.title {
+    color: blue;
+  text-align: center;
+}
+hr {
+    border: 3px solid blue;
+    width: 50%;
+    border-radius: 20px;
+}
