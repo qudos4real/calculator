@@ -20,7 +20,7 @@ function Buttons() {
   
   const equalTo = () => {
 try {
-  setVal(eval(val));
+  setVal(eval(val))
 } catch (error) {
   
 }
@@ -37,7 +37,7 @@ try {
           onClick={
             num === "C"
               ? (e) => clearVal()
-              :  num === "=" ? () => equalTo() :
+              :  num === "C" ? (e) => equalTo() :
               (e) => setVal(val + e.target.value)
           }
         >

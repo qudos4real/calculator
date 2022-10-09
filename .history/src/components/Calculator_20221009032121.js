@@ -17,14 +17,6 @@ function Buttons() {
       setVal(val.slice(0, -1));
     } catch (error) {}
   };
-  
-  const equalTo = () => {
-try {
-  setVal(eval(val));
-} catch (error) {
-  
-}
-  }
 
   return (
     <div className="buttonWrapper">
@@ -34,12 +26,9 @@ try {
           className="num"
           key={num}
           value={num}
-          onClick={
-            num === "C"
-              ? (e) => clearVal()
-              :  num === "=" ? () => equalTo() :
-              (e) => setVal(val + e.target.value)
-          }
+          onClick={num === "C"
+            ? (e) => clearVal()
+            : (e) => setVal(val + e.target.value)}
         >
           {num}
         </button>

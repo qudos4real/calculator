@@ -37,7 +37,7 @@ try {
           onClick={
             num === "C"
               ? (e) => clearVal()
-              :  num === "=" ? () => equalTo() :
+              :  num === "=" ? () => console.log("Hello") :
               (e) => setVal(val + e.target.value)
           }
         >

@@ -17,14 +17,6 @@ function Buttons() {
       setVal(val.slice(0, -1));
     } catch (error) {}
   };
-  
-  const equalTo = () => {
-try {
-  setVal(eval(val));
-} catch (error) {
-  
-}
-  }
 
   return (
     <div className="buttonWrapper">
@@ -37,7 +29,7 @@ try {
           onClick={
             num === "C"
               ? (e) => clearVal()
-              :  num === "=" ? () => equalTo() :
+              :  num === "C" ? (e) => equalTo() :
               (e) => setVal(val + e.target.value)
           }
         >

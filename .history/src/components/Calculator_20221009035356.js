@@ -1,6 +1,8 @@
 import React from "react";
 import "./Calculator.css";
 import { useState } from "react";
+import { clearVal, equalTo } from "./Calculations";
+
 
 const numbers = [
   [1, 2, 3, "+"],
@@ -12,19 +14,7 @@ const numbers = [
 function Buttons() {
   const [val, setVal] = useState(0);
 
-  const clearVal = () => {
-    try {
-      setVal(val.slice(0, -1));
-    } catch (error) {}
-  };
-  
-  const equalTo = () => {
-try {
-  setVal(eval(val));
-} catch (error) {
-  
-}
-  }
+
 
   return (
     <div className="buttonWrapper">
@@ -36,8 +26,7 @@ try {
           value={num}
           onClick={
             num === "C"
-              ? (e) => clearVal()
-              :  num === "=" ? () => equalTo() :
+              ? (e) => {clearVal}              :  num === "=" ? () => equalTo() :
               (e) => setVal(val + e.target.value)
           }
         >
