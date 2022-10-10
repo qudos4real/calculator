@@ -9,9 +9,6 @@ const numbers = [
   [7, 8, 9, "*"],
   ["C", 0, "=", "/"],
 ];
-;
-
-
 
 function Buttons() {
   const [val, setVal] = useState(0);
@@ -31,6 +28,11 @@ function Buttons() {
       setVal("Error");
     }
   };
+
+const className = () => {
+  return "num"
+}
+
   return (
     <>
     <Title />
@@ -38,7 +40,7 @@ function Buttons() {
       <input type="text" className="screen" value={val} onChange={(e) => setVal(e.target.value)} /> <br />
       {numbers.flat().map((num) => (
         <button
-          className={typeof(num) === "number" ? "num" : "num sign"}
+          className={className}
           key={num}
           value={num}
           onClick={

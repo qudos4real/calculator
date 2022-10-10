@@ -39,7 +39,7 @@ function Buttons() {
       {numbers.flat().map((num) => (
         <button
           className={typeof(num) === "number" ? "num" : "num sign"}
-          key={num}
+          
           value={num}
           onClick={
             num === "C"

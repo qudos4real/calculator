@@ -29,13 +29,13 @@
   cursor: pointer;
 }
 .sign {
-  background-color: rgba(4, 0, 255, 0.623);
+  background-color: rgba(4, 0, 255, 0.342);
   color: white;
 }
-/* .sign:hover {
+.sign:hover {
   background-color: white;
   color: blue;
-}  */
+} 
 .screen {
   width: 95%;
   margin-bottom: 0.5rem;

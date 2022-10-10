@@ -19,8 +19,8 @@
   box-shadow: 2px 2px 3px grey;
   border-radius: 0.5rem;
   background-color: white;
-  color: blue;
   transition-duration: 0.3s;
+  color: blue;
   font-weight: 600;
 }
 .num:hover {
@@ -29,13 +29,9 @@
   cursor: pointer;
 }
 .sign {
-  background-color: rgba(4, 0, 255, 0.623);
+  background-color: blue;
   color: white;
 }
-/* .sign:hover {
-  background-color: white;
-  color: blue;
-}  */
 .screen {
   width: 95%;
   margin-bottom: 0.5rem;

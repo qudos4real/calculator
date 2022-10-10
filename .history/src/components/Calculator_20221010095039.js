@@ -10,7 +10,7 @@ const numbers = [
   ["C", 0, "=", "/"],
 ];
 ;
-
+console.log(typeof(numbers[1][1]))
 
 
 function Buttons() {
@@ -38,7 +38,7 @@ function Buttons() {
       <input type="text" className="screen" value={val} onChange={(e) => setVal(e.target.value)} /> <br />
       {numbers.flat().map((num) => (
         <button
-          className={typeof(num) === "number" ? "num" : "num sign"}
+          className="num"
           key={num}
           value={num}
           onClick={

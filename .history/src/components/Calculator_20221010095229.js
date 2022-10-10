@@ -10,7 +10,7 @@ const numbers = [
   ["C", 0, "=", "/"],
 ];
 ;
-
+console.log(typeof(numbers[1][3]))
 
 
 function Buttons() {

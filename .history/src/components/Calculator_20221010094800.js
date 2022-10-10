@@ -3,6 +3,7 @@ import "./Calculator.css";
 import { useState } from "react";
 import Title from "./Title";
 
+const numbers2 = {value: 1, }
 const numbers = [
   [1, 2, 3, "+"],
   [4, 5, 6, "-"],
@@ -10,6 +11,7 @@ const numbers = [
   ["C", 0, "=", "/"],
 ];
 ;
+
 
 
 
@@ -38,7 +40,7 @@ function Buttons() {
       <input type="text" className="screen" value={val} onChange={(e) => setVal(e.target.value)} /> <br />
       {numbers.flat().map((num) => (
         <button
-          className={typeof(num) === "number" ? "num" : "num sign"}
+          className="num"
           key={num}
           value={num}
           onClick={
